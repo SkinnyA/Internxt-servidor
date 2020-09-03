@@ -22,5 +22,5 @@ app.use('/api/books', require('./routes/books'));
 
 // Run server
 app.listen(port, '0.0.0.0', () => {
-    console.log(`Server running at port ${PORT}`);
+    console.log(`Server running at port ${port}`);
 });
