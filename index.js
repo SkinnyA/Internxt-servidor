@@ -15,12 +15,12 @@ app.use(cors());
 app.use(express.json({ extended: true }));
 
 // App port
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 //  Import routes
 app.use('/api/books', require('./routes/books'));
 
 // Run server
-app.listen(PORT, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server running at port ${PORT}`);
 });
